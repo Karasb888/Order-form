@@ -1,0 +1,108 @@
+.header {
+display: flex;
+flex-direction: row;
+background-color: #ffffff;
+}
+.header__preview {
+    border-right: 1px solid #a5abc5;
+    display: flex;
+    flex-direction: row;
+}
+.order-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px 50px;
+    .title-item {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #6e768f;
+    }
+    .fa-address-book {
+        left: 26px;
+        position: absolute;
+    }
+    &__list {
+        display: flex;
+        padding-top: 20px;
+        list-style: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #6e768f;
+    }
+}
+.list-item {
+    padding-left: 50px;
+    &__title {
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+    &__value {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        color: #a5abc5; 
+    }
+}
+.list-item:first-child {
+    padding: 0;
+}
+.order-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;;
+    padding: 0 25px;
+    &__place {
+        text-transform: uppercase;
+        font-size: 18px;
+        background-color: #5fcac6;
+        color: #fff;
+        padding: 15px 30px;
+        border: 2px solid #5fcac6;
+        border-radius: 6px;
+    }
+    &__print {
+        text-transform: uppercase;
+        font-size: 18px;
+        background-color: #f7f7fa;
+        color: #a5abc5;
+        padding: 15px 30px;
+        border: 1px solid #a5abc5;
+        border-radius: 6px;
+    }
+}
+.header__contacts {
+    position: relative;
+    width: 30%;
+    padding: 25px 40px;
+    .fa-life-ring {
+        position: absolute;
+        left: 16px;
+    }
+    .contacts-title {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #6e768f;
+        padding-bottom: 20px;
+    }
+    .contacts-info {
+        font-size: 18px;
+        color: #a5abc5;
+        line-height: 1.3;
+        padding-bottom: 25px;
+    }
+}
+.contacts-items {
+    display: flex;
+    justify-content: space-between;
+    &__phone {
+        font-size: 18px;
+        color: #6e768f;
+    }
+    &__mail {
+        font-size: 18px;
+        color: #6e768f;
+    }
+}
