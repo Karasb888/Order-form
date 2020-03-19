@@ -26,9 +26,24 @@
     border: 1px solid #dddfe5;
     border-radius: 6px;
     display: inline-block;
+    transition: 0.2s;
+    position: relative;
     .select__input {
         display: none;
     }
+}
+.select__input:checked  + .select__item:before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(/img/svg/check-mark.svg);
+    top: -14px;
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    right: -17px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .select__input:checked + .select__item{
     border: 5px solid #76a7e1;
