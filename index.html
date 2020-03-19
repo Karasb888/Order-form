@@ -11,9 +11,9 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 <body>
-    <form class="main-form" action="">
+    <div class="wrapper">
         <img class="main-logo" src="img/logo.png" alt="">
-        <div class="wrapper">
+    <form class="main-form" action="">
             <header class="header">
                         <div class="header__preview">
                             <div class="order-items">
@@ -61,7 +61,41 @@
                             </div>
                         </div>
             </header>
-        </div>
+            <main class="main">
+                <section class="select">
+                    <h1 class="select__title">
+                        Select what you want to translate
+                    </h1>
+                    <hr class="select__line">
+                    <div class="select__block">
+                        <fieldset class="select__item">
+                           <input class="select__input" id="select__element" type="radio" >
+                           <label id="select__element" for="">
+                                <img src="img/document.png" alt="">
+                                <div class="select__text">Website</div>
+                            </label> 
+                        </fieldset>
+                        <fieldset class="select__item">
+                            <input class="select__input" id="select__element"type="radio">
+                            <label id="select__element"for="">
+                                <img src="img/web-page.png" alt="">
+                                <div class="select__text">Documents</div>
+                            </label>
+                        </fieldset>
+                        <fieldset class="select__item">
+                            <input class="select__input" id="select__element"type="radio">
+                            <label id="select__element"for="">
+                                <img src="img/social.png" alt="">
+                                <div class="select__text">Social Account</div>
+                            </label>
+                        </fieldset>
+                    </div>
+                </section>
+            </main>
+            <footer>
+
+            </footer>
     </form>
+</div>
 </body>
 </html>

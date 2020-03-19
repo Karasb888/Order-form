@@ -1,4 +1,5 @@
 @import "includes/header";
+@import "includes/main";
 body {
     background-color: #eceef4;
     font-family: Roboto, sans-serif;
@@ -7,17 +8,20 @@ body {
     display: block;
     margin: 5% auto;
     opacity: 0.5;
+    max-width: 50%;
 }
-.main__form {
-    // width: 80%;
-    margin: 0 auto;
-    display: inline-block;
+.main-form {
+    border: 1px solid #a5abc5;
+    background-color: #fff;
 }
 .wrapper {
-    border: 1px solid #a5abc5;
-    max-width: 75%;
+    max-width: 1400px;
     margin: 0 auto;
-    @media (max-width: 1200px){
+    padding: 0 15px;
+    @media(max-width: 1430px){
+        max-width: 1200px;
+    }
+    @media (max-width: 1230px){
         max-width: 970px;
     }
     @media(max-width: 992px){
