@@ -1,5 +1,8 @@
 @import "includes/header";
-@import "includes/main";
+@import "includes/select";
+@import "includes/upload";
+@import "includes/translate";
+@import "includes/settings";
 body {
     background-color: #eceef4;
     font-family: Roboto, sans-serif;
@@ -29,5 +32,21 @@ body {
     }
     @media(max-width: 767px){
         max-width: none;
+    }
+}
+.container {
+    width: 1250px;
+    margin: 0 auto;
+    @media(max-width: 1430px){
+        width: 1050px;
+    }
+    @media (max-width: 1230px){
+        width: 850px;
+    }
+    @media(max-width: 992px){
+        width: 680px;
+    }
+    @media(max-width: 767px){
+        width: 90%;
     }
 }

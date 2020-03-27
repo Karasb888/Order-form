@@ -1,0 +1,129 @@
+.upload {
+    margin-bottom: 100px;
+    &__step {
+        font-size: 20px;
+        color: #6e768f;
+        width: 35px;
+        height: 35px;
+        line-height: 31px;
+        border-radius: 50%;
+        border: 2px solid #a5abc5;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: -42px;
+        margin-right: 11px;
+    }
+    &__title {
+       display: flex;
+       align-items: center;
+       &-text {
+        font-size: 28px;
+        color: #6e768f; 
+       }
+    }
+}
+
+.upload__types {
+    font-size: 25px;
+    color: #9fa5b8;
+    margin-left: 15px;
+}
+.upload__btn {
+    margin: 30px 0;
+    .upload__input {
+        display: none;
+    }
+    .upload__item {
+        font-size: 18px;
+        background-color: #f7f7fa;
+        color: #6e768f;
+        padding: 15px 30px;
+        border: 1px solid #a5abc5;
+        border-radius: 5px;
+        display: inline-block;
+    }
+}
+.fa-download {
+    margin-right: 10px;
+}
+.upload__info {
+    padding: 30px 60px;
+    background-color: #ffffff;
+    color: #a5abc5;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 16px;
+    border: 1px solid #a5abc5;
+    border-radius: 5px;
+}
+.info-items {
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    &__value {
+        list-style: none;
+        font-size: 18px;
+        color: #a5abc5;
+        padding-top: 25px;
+    }
+    &__value_position {
+        text-align: center;
+    }
+}
+.fa-file {
+    margin-right: 15px;
+}
+@media(max-width: 991px){
+    .upload__info {
+        padding: 30px 20px;
+    }
+    .upload__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .upload__step{
+        margin: 0;
+    }
+    .upload__types {
+        margin: 0;
+    }
+    .upload__title-text {
+        margin: 15px 0;
+    }
+}
+@media(max-width:767px){
+    .upload__info {
+        padding: 20px 10px;
+        justify-content: space-around;
+    }
+    .info-items__title {
+        font-size: 14px;
+    }
+    .info-items__value {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+}
+@media(max-width: 560px){
+    .upload__info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .info-items {
+        padding-bottom: 20px;
+        padding-right: 10px;
+    }
+    .info-items:nth-child (3) {
+        padding-bottom: 0;
+    }
+}
+@media(max-width:375px){
+    .info-items {
+        padding-right: 0;
+    }
+}
