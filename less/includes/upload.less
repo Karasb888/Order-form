@@ -1,18 +1,7 @@
 .upload {
     margin-bottom: 100px;
     &__step {
-        font-size: 20px;
-        color: #6e768f;
-        width: 35px;
-        height: 35px;
-        line-height: 31px;
-        border-radius: 50%;
-        border: 2px solid #a5abc5;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        text-align: center;
-        margin-left: -42px;
-        margin-right: 11px;
+        .main-number();
     }
     &__title {
        display: flex;
@@ -86,17 +75,20 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    .upload__step{
-        margin: 0;
-    }
     .upload__types {
         margin: 0;
     }
     .upload__title-text {
-        margin: 15px 0;
+        margin-bottom: 15px;
     }
 }
 @media(max-width:767px){
+    .upload__title-text {
+        font-size: 18px;
+    }
+    .upload__types {
+        font-size: 16px;
+    }
     .upload__info {
         padding: 20px 10px;
         justify-content: space-around;

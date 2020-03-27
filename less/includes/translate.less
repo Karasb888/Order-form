@@ -1,18 +1,7 @@
 .translate {
     margin-bottom: 100px;
     &__step {
-        font-size: 20px;
-        color: #6e768f;
-        width: 35px;
-        height: 35px;
-        line-height: 31px;
-        border-radius: 50%;
-        border: 2px solid #a5abc5;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        text-align: center;
-        margin-left: -42px;
-        margin-right: 11px;
+        .main-number();
     }
     &__title {
        display: flex;
@@ -63,7 +52,9 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    .translate__step {
-        margin: 0 0 15px;
+}
+@media(max-width:767px){
+    .translate__title-text {
+        font-size: 18px;
     }
 }
