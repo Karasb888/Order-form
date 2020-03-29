@@ -55,22 +55,10 @@ border-bottom: 1px solid #a5abc5;
     justify-content: space-evenly;;
     margin: 0 auto;
     &__place {
-        text-transform: uppercase;
-        font-size: 18px;
-        background-color: #5fcac6;
-        color: #fff;
-        padding: 15px 25px;
-        border: 2px solid #5fcac6;
-        border-radius: 6px;
+        .btn-place();
     }
     &__print {
-        text-transform: uppercase;
-        font-size: 18px;
-        background-color: #f7f7fa;
-        color: #a5abc5;
-        padding: 15px 25px;
-        border: 1px solid #a5abc5;
-        border-radius: 6px;
+        .btn-print();
     }
 }
 .header__contacts {
@@ -131,7 +119,7 @@ border-bottom: 1px solid #a5abc5;
         }
     }
 }
-@media(max-width: 991px){
+@media(max-width: 992px){
     .order-items {
         padding: 20px 10px;
          .fa-address-book {

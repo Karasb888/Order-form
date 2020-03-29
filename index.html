@@ -74,7 +74,7 @@
                                         <img class="select__img" src="img/web-page.png" alt="">
                                         <div class="select__text">Website</div>
                                 </label>
-                                    <input name="select" class="select__input" id="select-document"type="radio">
+                                    <input name="select" class="select__input" id="select-document"type="radio" checked>
                                     <label class="select__item select__item_position" for="select-document">
                                         <img class="select__img" src="img/document.png" alt="">
                                         <div class="select__text">Documents</div>
@@ -127,26 +127,6 @@
                                     <div class="info-items__value info-items__value_position"><i class="fa fa-trash" aria-hidden="true"></i></div>
                                 </li>
                         </ul>
-                        <!-- <ul class="upload__info">
-                            <li>
-                                <div class="kek">File name</div>
-                                <div class="kek">File size</div>
-                                <div class="kek">Number of words</div>
-                                <div class="kek">Remove</div>
-                            </li>
-                            <li>
-                                <div class="kek">business_operation.docx</div>
-                            <div class="kek">78kb</div>
-                            <div class="kek">842</div>
-                            <div class="kek"><i class="fa fa-trash" aria-hidden="true"></i></div>
-                        </li>
-                            <li>
-                                <div class="kek">business_financial.docx</div>
-                                <div class="kek">26kb</div>
-                                <div class="kek">2,326</div>
-                                <div class="kek"><i class="fa fa-trash" aria-hidden="true"></i></div>
-                            </li>
-                        </ul> -->
                     </div>
                 </section>
                 <section class="translate">
@@ -190,7 +170,7 @@
                                         <i class="fas fa-comments"></i>
                                         Friendly / Casual
                                     </label>
-                                    <input name="design" class="design__input" id="select-pro"type="radio">
+                                    <input name="design" class="design__input" id="select-pro"type="radio" checked>
                                     <label class="design__item design__item_position" for="select-pro">
                                         <i class="fas fa-user-tie"></i>
                                         Corporate / Pro
@@ -225,9 +205,64 @@
                         </div>
                     </div>
                 </section>
+                <section class="personal-info">
+                    <div class="container">
+                        <div class="personal-info__title">
+                            <div class="personal-info__step">5</div>
+                            <div class="personal-info__title-text">Sign up and choose a payment method</div> 
+                        </div>
+                        <h2 class="personal-info__short-title">
+                            Already have an account with us?<span class="personal-info__sign">Sign in</span>
+                        </h2>
+                        <fieldset>
+                            <div class="order-form">
+                                <div class="order-form__name">
+                                    <label class="order-form__label" for="name">Full name</label>
+                                    <input class="order-form__input  order-form__full-name"  type="text" id="name" name="user_name" placeholder="Mathieu Mayer">
+                                </div>
+                                <div class="order-form__item">
+                                    <div class="order-form__block">
+                                        <label class="order-form__label" for="mail">Email adress</label>
+                                        <input class="order-form__input order-form__mail" size="30" type="email" id="mail" name="user_mail" placeholder="mathieu.mm@me.com">
+                                    </div>
+                                    <div class="order-form__block">
+                                        <label class="order-form__label" for="password">Choose a password</label>
+                                        <input class="order-form__input  order-form__password" size="30" type="password" id="password" name="user_password">
+                                    </div>
+                                </div>
+                                <div class="order-form__item">
+                                    <div class="order-form__block">
+                                        <label class="order-form__label" for="number">Card number</label>
+                                        <input class="order-form__input  order-form__number" type="number" id="number" name="user_cardNumber" placeholder="">
+                                    </div>
+                                    <div class="order-form__block">
+                                        <label class="order-form__label" for="date">Expiry date</label>
+                                        <input size="10" class="order-form__input  order-form__date" type="date" id="date" name="user_expiryDate" placeholder="DD / MM /YY">
+                                    </div>
+                                    <div class="order-form__block">
+                                        <label class="order-form__label" for="code">Code</label>
+                                        <input  class="order-form__input order-form__code" type="number" id="code" name="user_code">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
             </main>
-            <footer>
-
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__terms">
+                        <input type="checkbox" id="terms" name="terms"
+                        checked>
+                        <label class="terms-input" for="terms">I agree to the <span class="terms-item">Terms & Conditions</span></label>
+                    </div>
+                    <button class="footer-buttons__place">
+                        <p> place order</p>
+                    </button>
+                    <button class="footer-buttons__print">
+                        <p> print a quote</p>
+                    </button>
+                </div>
             </footer>
         </form>
     </div>
